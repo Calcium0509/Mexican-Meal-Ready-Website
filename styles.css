@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4e3;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #e63946;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.nav {
+    background-color: #f1faee;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #e63946;
+    font-weight: bold;
+}
+
+.mission-statement-container {
+    background-color: #a8dadc;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mission-statement{
+    background-color: #e8f3f3;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0  0 10px black;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.info {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.MealKits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-basis: 200px;
+    padding: 15px;
+}
+
+.MealKits {
+    background-color: #f1faee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+.MealKits:hover{
+    background-color: #f58b8b;
+}
+.MealKits:first-child:hover{
+    background-color: #a6f58b;
+}
+.MealKits img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: #ccc;
+}
+
+.MealKits button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 75%;
+    transition: 0.4s;
+}
+
+.MealKits button a {
+    color: white;
+    text-decoration: none;
+}
+
+.MealKits button:hover {
+    background-color: #ee5060;
+    scale: 1.05;
+}
+
+.footer {
+    background-color: #e63946;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+.Unavailable{
+    color: #e63946;
+}

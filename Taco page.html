@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground-Beef-Tacos</title>
+    <link rel="stylesheet" href="Taco page.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Mexican Meal Ready</h1>
+        <img src="images/MEXICAN MEAL READY.jpg" alt="Logo" width="200" height="200">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="Taco page.html">About Us</a></li>
+            <li><a href="Taco page.html">Contact</a></li>
+            <li><a href="Taco page.css">Merch</a></li>
+        </ul>
+    </div>
+    <div class="Ground-Beef-Tacos h1">
+    <h1>Mexican-Ground-Beef-Tacos</h1>
+    </div>
+    <a href="index.html"><button>Back</button></a>
+    <div class="main-container">
+        <img src="images/Ground-Beef-Tacos-9.jpg" alt="taco image" width="200" height="300">
+        <div class="purchase-section">
+            <h2>Purchase Meal Kit</h2>
+            <p>Please note it takes 3-5 days to receive meal-kit</p>
+            <form onsubmit="return handlePurchase()">
+                <label for="quantity">Select Quantity (8 servings per kit):</label>
+                <select id="quantity" name="quantity" onchange="updateQuantities()">
+                    <option value="1">1 Kit</option>
+                    <option value="2">2 Kits</option>
+                    <option value="3">3 Kits</option>
+                    <option value="4">4 Kits</option>
+                    <option value="5">5 Kits</option>
+                </select>
+                <p>Total Cost: <span id="total-cost">$45</span></p>
+                <input type="text" id="Email" placeholder="Email" required>
+                <button type="submit">Buy Now</button>
+            </form>
+        </div>                
+        <div class="Ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li data-quantity="1">1 tablespoon olive oil</li>
+                <li data-quantity="500">500g lean ground beef</li>
+                <li data-quantity="2">2 teaspoons chili powder</li>
+                <li data-quantity="2">2 teaspoons ground cumin</li>
+                <li data-quantity="0.5">½ teaspoon oregano</li>
+                <li data-quantity="0.5">½ teaspoon garlic powder</li>
+                <li data-quantity="0.5">½ teaspoon salt</li>
+                <li data-quantity="0.5">½ teaspoon black pepper</li>
+                <li data-quantity="2">2 cups tomato paste</li>
+                <li data-quantity="0.5">½ cup water</li>
+                <li data-quantity="0.5">½ a shredded lettuce</li>
+                <li data-quantity="3">3 tomatoes</li>
+                <li data-quantity="2">2 cucumbers</li>
+                <li data-quantity="2">2 avocados</li>
+                <li data-quantity="500">500mL lemon juice</li>
+                <li data-quantity="500">500g shredded cheese</li>
+                <li data-quantity="300">300mL Sour Cream</li>
+                <li data-quantity="2">2 red onions</li>
+            </ul>
+            <h3>For serving the tacos</h3>
+            <ul>
+                <li data-quantity="8">8 small corn flour tortillas</li>
+                <li>shredded lettuce</li>
+                <li>shredded Mexican cheese blend or cheddar cheese</li>
+                <li>diced tomatoes</li>
+            </ul>
+            <h3>For serving the tacos</h3>
+            <ul>
+                <li data-quantity="8">8 small corn flour tortillas</li>
+                <li>shredded lettuce</li>
+                <li>shredded Mexican cheese blend or cheddar cheese</li>
+                <li>diced tomatoes</li>
+            </ul>
+        </div>
+        <div class="Intructions">
+            <h2>Intructions</h2>
+            <ol>
+                <li>Heat the olive oil in skillet over medium high heat. Add the ground beef and cook until browned, about 5-7 minutes. Drain any fat.</li>
+                <li>Add the chili powder, cumin, dried oregano, garlic powder, salt, pepper, tomato paste and water. Stir to combine and continue cooking over medium-low heat until the sauce has thickened, about 3-5 minutes</li>
+                <li>Serve warm over tortillas with lettuce, tomatoes, cheese and red onions, or your other desired toppings.</li>
+            </ol>
+        </div>
+        <div class="home-made-seasoning">
+            <h2>Home made seasoning</h2>
+            <p>Making taco seasoning from scratch is super easy and can be cheaper than buying the prepared taco seasoning. Here are the spices I include in my recipe. Feel free to also add paprika, coriander, onion powder and crushed red pepper to give it some heat.</p>
+            <ol>
+                <li>Chili powder</li>
+                <li>Cumin</li>
+                <li>Garlic powder</li>
+                <li>Mexican oregano</li>
+                <li>Salt and pepper</li>
+            </ol>
+            <p>I provide suggested amounts in the recipe card below because usually there’s more of the chili powder and cumin compared to the other spices. However, feel free to adjust the quantities, or use your favorite prepared taco seasoning.</p>
+        </div>
+        <div class="how-to-taco-meat">
+            <h2>How to make ground beef taco meat</h2>
+            <ol>
+                <li>Place the ground beef in a skillet with olive oil.</li>
+                <li>Brown the beef with olive oil and then drain any fat.</li>
+                <li>Add the spices along with the tomato paste and water (or tomato sauce)</li>
+                <li>Bring the mixture to a simmer and then cook for a few more minutes until the sauce thickens.</li>
+            </ol>
+        </div>
+        <div class="toppings-for-tacos">
+            <h2>Toppings for tacos</h2>
+            <p>Feel free to add whatever extra topping you would like, this meal-kit comes with these toppings:</p>
+            <ol>
+                <li>Shredded lettuce</li>
+                <li>Shredded cheddar cheese</li>
+                <li>Red onions</li>
+                <li>cucumber</li>
+                <li>tomato</li>
+                <li>Guacamole (store bought or homemade) or avocado</li>
+                <li>Sour Cream</li>
+                <li>Salsa</li>
+            </ol>
+        </div>
+        <div class="notes">
+            <h2>Notes</h2>
+            <p><b>Storage:</b> Store any leftovers in an airtight container. They will last up to 4 days and can be reheated on the stovetop. To reheat, add a splash of water so the taco meat doesn’t dry out.</p>
+                <p><b>Freezing Instructions:</b> Allow the taco meat to cool down completely, then place in freezer-safe storage containers or ziplock bags for up to 3 months.</p>
+                <p><b>Substitutes:</b> For best results, follow the recipe as is. However here are some common substitutes that would work well in this recipe.</p>
+        </div>
+        <div class="nutrition">
+            <h2>Nutrition</h2>
+            <p><b>Calories:</b> 142kcal, <b>Carbohydrates:</b> 13g, <b>Protein:</b> 14g, Fat: 4g, <b>Saturated Fat:</b> 1g, <b>Cholesterol:</b> 35mg <b>Sodium:</b> 236mg, <b>Potassium:</b> 304mg, <b>Fiber:</b> 2g, <b>Sugar:</b> 1g, <b>Vitamin A:</b> 216IU, <b>Vitamin C:</b> 1mg, <b>Calcium:</b> 36mg, <b>Iron:</b> 2mg</p>
+            <p>Nutrition information provided is an estimate. It will vary based on cooking method and specific ingredients used.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Mexican Meal Ready. All rights reserved.</p>
+    </div>
+    <script>
+        function updateQuantities() {
+            const quantity = document.getElementById('quantity').value;
+            const ingredients = document.querySelectorAll('.Ingredients ul li');
+
+            ingredients.forEach(ingredient => {
+                const baseQuantity = ingredient.getAttribute('data-quantity');
+                if (baseQuantity) {
+                    const newQuantity = baseQuantity * quantity;
+                    ingredient.textContent = ingredient.textContent.replace(/^[\d.]+/, newQuantity);
+                }
+            });
+
+            const totalCost = 45 * quantity;
+            document.getElementById('total-cost').textContent = `\$${totalCost}`;
+        }
+
+        function handlePurchase() {
+            alert('Thank you for buying our Meal-Kit!');
+            window.location.href = 'Mexican Meal Ready.html';
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>
